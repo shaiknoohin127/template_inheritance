@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Document</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+    <button class="btn btn-danger">DANGER</button>
+    {% block body_block %}
+    <button class="btn btn-primary">PRIMARY</button>
+    {% endblock body_block %}
+    <button class="btn btn-warning">WARNING</button>
+    
+    
+
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>
